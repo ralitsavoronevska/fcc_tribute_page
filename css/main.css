@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box; }
 
 /* css formula: responsive fonts using rems */
