@@ -344,8 +344,7 @@ blockquote {
     position: absolute; }
 
 .socials {
-  overflow: hidden;
-  padding: 2rem; }
+  overflow: hidden; }
   .socials h3 {
     font-weight: bold;
     color: #000;
@@ -360,8 +359,8 @@ blockquote {
       background: #fff;
       border: 3px solid #ffdf1e;
       border-radius: 50%;
-      height: 6rem;
-      width: 6rem;
+      height: 5rem;
+      width: 5rem;
       transition: all 0.5s ease-out; }
       .socials .socials-info div:hover {
         transform: translateY(-25%);
@@ -441,7 +440,7 @@ footer {
     line-height: 1.2; }
   #image {
     visibility: hidden;
-    height: 0 !important; }
+    position: absolute !important; }
   #image-small {
     visibility: visible; }
   h2 a span {
@@ -460,8 +459,10 @@ footer {
     visibility: visible !important; }
   #image-small {
     visibility: hidden !important;
-    height: 0 !important;
-    position: absolute !important; } }
+    position: absolute !important; }
+  .socials-info div {
+    width: 6rem !important;
+    height: 6rem !important; } }
 
 @media (min-width: 461px) and (max-width: 650px) {
   h1 {
