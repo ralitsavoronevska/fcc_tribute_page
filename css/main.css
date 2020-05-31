@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box; }
 
 /* css formula: responsive fonts using rems */
@@ -29,9 +27,7 @@ a {
     color: #ee4f00; }
 
 /* SVG icons */
-.fab,
-.fas,
-.far {
+.fab, .fas, .far {
   background-repeat: no-repeat !important;
   background-position: center; }
 
@@ -47,8 +43,7 @@ a {
   background: url("../img/js-square.svg");
   filter: invert(93%) sepia(93%) saturate(1051%) hue-rotate(334deg) brightness(101%) contrast(101%); }
 
-.fa-quote-left,
-.fa-quote-right {
+.fa-quote-left, .fa-quote-right {
   width: 4rem;
   height: 4rem; }
 
@@ -58,10 +53,7 @@ a {
 .fa-quote-right {
   background: url("../img/quote-right-solid.svg"); }
 
-.fa-link,
-.fa-facebook-f,
-.fa-twitter,
-.fa-instagram {
+.fa-link, .fa-facebook-f, .fa-twitter, .fa-instagram {
   width: 3.5rem;
   height: 3.5rem; }
 
@@ -141,8 +133,7 @@ a {
       border: 3px solid #000;
       box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
       border-radius: 50%; }
-    #img-div .img-container h1,
-    #img-div .img-container h2 {
+    #img-div .img-container h1, #img-div .img-container h2 {
       margin: 4rem; }
   #img-div #img-caption {
     color: #000;
@@ -238,10 +229,10 @@ a {
   margin: 0 auto;
   position: relative; }
   .timeline::before {
+    content: ' ';
+    position: absolute;
     top: 0px;
     bottom: 40px;
-    position: absolute;
-    content: ' ';
     width: 3px;
     background-color: #000;
     left: 50%;
@@ -267,6 +258,7 @@ a {
       box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
       border-radius: 0.5rem; }
       .timeline li .timeline-panel::before {
+        content: ' ';
         position: absolute;
         top: 20px;
         right: -18px;
@@ -274,8 +266,7 @@ a {
         border-top: 15px solid transparent;
         border-left: 15px solid #000;
         border-right: 0 solid #000;
-        border-bottom: 15px solid transparent;
-        content: ' '; }
+        border-bottom: 15px solid transparent; }
       .timeline li .timeline-panel .timeline-title {
         margin: 0;
         padding: 1rem;
@@ -334,8 +325,7 @@ blockquote {
     position: relative;
     padding: 2rem;
     font-size: 2rem; }
-  blockquote p,
-  blockquote cite {
+  blockquote p, blockquote cite {
     font-weight: bold;
     color: #000; }
   blockquote cite {
@@ -484,6 +474,12 @@ footer {
     padding: 0.5rem 2rem 1rem 2rem; }
     h2 span {
       display: block; } }
+
+@media (min-width: 651px) and (max-width: 767px) {
+  h1 {
+    font-size: 2.75rem !important;
+    line-height: 1.2;
+    margin: 0 !important; } }
 
 @media (min-width: 461px) and (max-width: 767px) {
   .tooltiptext.brave.inverted {
