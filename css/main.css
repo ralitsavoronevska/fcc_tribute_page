@@ -150,7 +150,8 @@ a {
     background-color: #ffdf1e;
     padding: 2rem; }
     #img-div #img-caption .about {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin: 0; }
       #img-div #img-caption .about .name {
         font-weight: bold; }
 
@@ -441,9 +442,10 @@ footer {
 @media (max-width: 460px) {
   #main {
     margin: 0; }
-  h1 {
+  h1#title {
     font-size: 2.5rem !important;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin: 0 !important; }
   h2 {
     font-size: 1.85rem !important;
     line-height: 1.2; }
@@ -452,9 +454,6 @@ footer {
     height: 0 !important; }
   #image-small {
     visibility: visible; }
-  #title {
-    font-size: 3rem;
-    margin-bottom: 1rem; }
   h2 a span {
     display: block;
     margin-bottom: 1rem; }
@@ -471,12 +470,14 @@ footer {
     visibility: visible !important; }
   #image-small {
     visibility: hidden !important;
-    height: 0 !important; } }
+    height: 0 !important;
+    position: absolute !important; } }
 
 @media (min-width: 461px) and (max-width: 650px) {
   h1 {
     font-size: 2.75rem !important;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin: 0 !important; }
   h2 {
     font-size: 2rem !important;
     line-height: 1.2 !important;
@@ -518,11 +519,14 @@ footer {
 
 @media (min-width: 768px) {
   #img-div .img-container #image {
-    margin-top: 2rem; }
+    margin-top: 1rem; }
+  #img-div h1 {
+    margin: 0 !important; }
   #img-div h2 {
+    margin-top: 0 !important;
     margin-bottom: 2rem; }
   #img-div #img-caption {
-    padding: 3rem; }
+    padding: 2rem; }
     #img-div #img-caption .about {
       font-size: 2.25rem; }
   .timeline li.timeline-left {
@@ -539,6 +543,8 @@ footer {
     margin: auto; } }
 
 @media (min-width: 1024px) {
+  h2, .about {
+    font-size: 2.5rem !important; }
   .socials-info {
     width: 35%;
     margin: auto; } }
